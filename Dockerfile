@@ -23,6 +23,4 @@ RUN mkdir -p ${MAVEN_HOME} \
 # do some clean-up
     && rm -fr /usr/local/apache-maven-${MAVEN_VERSION}
 
-WORKDIR ${MAVEN_HOME}
-
-CMD ["mvn"]
+CMD ["/usr/bin/mvn"]
